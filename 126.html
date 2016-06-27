@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>126</title>
+        <link rel="stylesheet" href="reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="layout.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <section>
+            <div class="all">
+                <nav>
+                    <a href="" id="a1">二维码登录</a><a href="" id="a2">邮箱账号登录</a>
+                </nav>
+                <div id="left">
+                    <h4>手机扫码&nbsp;安全防盗</h4>
+                    <div id="imgs">
+                        <img src="QAQ1.jpg" id="img1" alt="" />
+                        <img src="QAQ2.png" id="img2" alt="" />
+                    </div>
+                    <span>使用&nbsp;邮箱大师&nbsp;扫描二维码登录</span><br/>
+                    <p><a href="">如何使用</a> | <a href="">下载邮箱大师</a></p>
+                </div>
+                <div id="right">
+                    <input type="text" id="i1"  placeholder="邮箱账号或手机号"name="name" value="">
+                    <input type="password"id="i2"  placeholder="密码"name="name" value="">
+                    <input type="checkbox" id="i3" name="name" value=""><span>十天内免登录</span><i>忘记密码了？</i>
+                    <button type="button" id="but1" name="button">登录</button>
+                    <button type="button" id="but2" name="button">注册</button>
+                    <p>版本：默认版本<span>正使用SSL登录</span></p>
+                    <img src="1.png" alt="" />
+                    <ul>
+                        <li>
+                            <a href="">2016春季新品发布会开始咯！</a>
+                        </li>
+                        <li>
+                            <a href="">5.5寸至美新机排队申领中！</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </body>
+
+
+
+    <script type="text/javascript">
+    var a1= document.getElementById('a1');
+    var a2= document.getElementById('a2');
+    var zuo =document.getElementById('left');
+    var you =document.getElementById('right');
+    a1.onmouseover = function (){
+        zuo.style.display= 'block';
+        you.style.display= 'none';
+        a1.style.background='white';
+        a2.style.background='';
+
+    }
+    a2.onmouseover = function (){
+        you.style.display= 'block';
+        zuo.style.display= 'none';
+        a2.style.background='white';
+        a1.style.background='';
+    }
+
+    var imgs = document.getElementById('imgs');
+    var img1 = document.getElementById('img1');
+    var img2 = document.getElementById('img2');
+    imgs.onmouseover=function(){
+        img1.style.marginLeft='-75px';
+        img2.style.visibility='visible';
+        }
+    imgs.onmouseout=function(){
+        img1.style.marginLeft='';
+        img2.style.visibility='hidden';
+        }
+
+
+
+
+    </script>
+</html>
